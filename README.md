@@ -2,7 +2,7 @@
 # EarlyBird
 
 ## General info
-No more oversleeping with *EarlyBird*!*EarlyBird* is an Android application that does not only wake you up, but also makes you GET UP to disable the alarm by scanning the QR Code, solving an equation or taking a walk. 
+No more oversleeping with *EarlyBird*! EarlyBird is an Android application that does not only wake you up, but also makes you GET UP to disable the alarm by scanning the QR Code, solving an equation or taking a walk. 
 
 
 #### Sounds attribution
