@@ -1,8 +1,8 @@
 
-# SmartAlarm
+# EarlyBird
 
 
-> *EarlyBird* is an Android application that does not only wake You up, but also makes You get up to disable the alarm by scanning the QR Code, solving an equation or taking a walk.
+> *EarlyBird* is an Android application that does not only wake you up, but also makes You get up to disable the alarm by scanning the QR Code, solving an equation or taking a walk.
 
 
 ## General info
