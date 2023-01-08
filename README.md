@@ -1,12 +1,8 @@
 
 # EarlyBird
 
-
-> *EarlyBird* is an Android application that does not only wake you up, but also makes You get up to disable the alarm by scanning the QR Code, solving an equation or taking a walk.
-
-
 ## General info
-No more oversleeping with *EarlyBird*! Download the default QR code and print it, or scan Your own, put it in a place remote from Your bed, turn on the alarm and prepare for a more productive morning! EarlyBird will make You not only wake up, but also get up to actually turn off the alarm (unless You make the alarm snooze xD ). 
+No more oversleeping with *EarlyBird*!*EarlyBird* is an Android application that does not only wake you up, but also makes you GET UP to disable the alarm by scanning the QR Code, solving an equation or taking a walk. 
 
 
 #### Sounds attribution
