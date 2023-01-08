@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".features.menu.MenuActivity"
+    android:background="@color/dirty_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <include layout="@layout/line_separator" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/set_alarm_sound"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/arista_pro"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/alarm_tone_spinner"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="wrap_content"
+                        android:backgroundTint="@color/light_blue"
+                        android:layout_height="wrap_content"
+                        android:background="@color/brownish_green" />
+
+                    <com.sweak.smartalarm.ui.PopButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_action_button"
+                        android:onClick="startAlarmPreview"
+                        android:text="@string/preview"
+                        android:fontFamily="@font/arista_pro"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/line_separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:textColor="@color/blue"
+                    android:layout_weight="1"
+                    android:text="@string/set_snooze_duration"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/arista_pro"/>
+
+                <Spinner
+                    android:id="@+id/snooze_duration_spinner"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/light_blue"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp" />
+            </LinearLayout>
+
+            <include layout="@layout/line_separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/set_snooze_number"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/arista_pro"/>
+
+                <Spinner
+                    android:id="@+id/snooze_number_spinner"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/light_blue"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp" />
+            </LinearLayout>
+
+            <include layout="@layout/line_separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="saveCodeToGallery">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:text="@string/save_qr_code"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/arista_pro"/>
+
+                <include layout="@layout/open_setting_dialog_arrow" />
+            </LinearLayout>
+
+            <include layout="@layout/line_separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="addCustomQRDismissCode">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue"
+                    android:text="@string/scan_custom_qr_code"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/arista_pro"/>
+
+                <include layout="@layout/open_setting_dialog_arrow" />
+            </LinearLayout>
+
+            <include layout="@layout/line_separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="resetQRDismissCode">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/arista_pro"
+                    android:textColor="@color/blue"
+                    android:text="@string/reset_qr_code"
+                    android:textSize="20sp" />
+
+                <include layout="@layout/open_setting_dialog_arrow" />
+            </LinearLayout>
+
+            <include layout="@layout/line_separator" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

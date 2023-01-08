@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.stepcount.StepCounter"
+    android:background="@color/dirty_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/brown">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pyelmewn"/>
+
+    </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/step_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            android:fontFamily="@font/arista_pro"
+            android:text="Steps you made today:"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:id="@+id/step_detect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neon"
+            android:text="0"
+            android:textColor="@color/blue"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="50dp"/>
+
+    <Button
+        android:id="@+id/step_to_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/brownish_green"
+        android:fontFamily="@font/arista_pro"
+        android:text="HOME"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

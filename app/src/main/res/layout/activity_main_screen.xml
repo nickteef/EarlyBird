@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brownish_green"
+    android:orientation="vertical"
+    tools:context=".features.main.MainScreen">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/dirty_white"
+        android:padding="20dp">
+        
+        <ImageView
+            android:id="@+id/icon_home_screen"
+            android:layout_width="1000dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logowithname"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/go_to_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Alarm "
+        android:textSize="50dp"
+        android:background="@color/brown"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:fontFamily="@font/arista_pro"/>
+    <Button
+        android:id="@+id/go_to_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Settings"
+        android:textSize="50dp"
+        android:background="@color/brown"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:fontFamily="@font/arista_pro"/>
+    <Button
+        android:id="@+id/go_to_doggy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Dog walker mode"
+        android:textSize="50dp"
+        android:background="@color/brown"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:fontFamily="@font/arista_pro"/>
+    <Button
+        android:id="@+id/go_to_math"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Brain training"
+        android:textSize="50dp"
+        android:background="@color/brown"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:fontFamily="@font/arista_pro"/>
+    
+</LinearLayout>
